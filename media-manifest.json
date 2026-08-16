@@ -1,0 +1,955 @@
+{
+  "music": [
+    {
+      "title": "01 Rooyesh",
+      "artist": "",
+      "path": "media/music/01 Rooyesh.mp3"
+    },
+    {
+      "title": "02 Azadi",
+      "artist": "",
+      "path": "media/music/02 Azadi.mp3"
+    },
+    {
+      "title": "Asabani",
+      "artist": "04",
+      "path": "media/music/04 - Asabani.mp3"
+    },
+    {
+      "title": "Ehtiaj Daram",
+      "artist": "04",
+      "path": "media/music/04 - Ehtiaj Daram.mp3"
+    },
+    {
+      "title": "05 Perspolis",
+      "artist": "",
+      "path": "media/music/05 Perspolis.mp3"
+    },
+    {
+      "title": "2Yar Lavasoon",
+      "artist": "",
+      "path": "media/music/2Yar-Lavasoon-320.mp3"
+    },
+    {
+      "title": "5443c4f903 12c3637726c1ce593a69798a6ea9da24",
+      "artist": "",
+      "path": "media/music/5443c4f903_12c3637726c1ce593a69798a6ea9da24.mp3"
+    },
+    {
+      "title": "7 Band Dire",
+      "artist": "",
+      "path": "media/music/7-Band-Dire-320.mp3"
+    },
+    {
+      "title": "7 Band Dooset Daram",
+      "artist": "",
+      "path": "media/music/7-Band-Dooset-Daram-256.mp3"
+    },
+    {
+      "title": "7 Band To",
+      "artist": "",
+      "path": "media/music/7-Band-To-320.mp3"
+    },
+    {
+      "title": "TalkDown & Fedi Dara Dara Da Remix",
+      "artist": "@Free RapHipHop",
+      "path": "media/music/@Free_RapHipHop - TalkDown & Fedi - Dara Dara Da - Remix.mp3"
+    },
+    {
+      "title": "Alan Ke Tanhaei",
+      "artist": "",
+      "path": "media/music/Alan Ke Tanhaei.mp3"
+    },
+    {
+      "title": "Hamishe Bash",
+      "artist": "Ali Sedighi",
+      "path": "media/music/Ali Sedighi - Hamishe Bash.mp3"
+    },
+    {
+      "title": "Ali Abbasi Eshgh Mikonam",
+      "artist": "",
+      "path": "media/music/Ali-Abbasi-Eshgh-Mikonam-320.mp3"
+    },
+    {
+      "title": "Ali Sorena Bad Az Man",
+      "artist": "",
+      "path": "media/music/Ali-Sorena-Bad-Az-Man-320.mp3"
+    },
+    {
+      "title": "Ali Yasini Kenaretam",
+      "artist": "",
+      "path": "media/music/Ali-Yasini-Kenaretam-320.mp3"
+    },
+    {
+      "title": "Ali Yasini Mage Chand Bar Zendam",
+      "artist": "",
+      "path": "media/music/Ali-Yasini-Mage-Chand-Bar-Zendam-320.mp3"
+    },
+    {
+      "title": "ali abdolmaleki emshab",
+      "artist": "",
+      "path": "media/music/ali_abdolmaleki_emshab.mp3"
+    },
+    {
+      "title": "Alireza Ghorbani – Tasian ()",
+      "artist": "",
+      "path": "media/music/Alireza Ghorbani – Tasian (320).mp3"
+    },
+    {
+      "title": "Alireza Talischi Bi Panahi",
+      "artist": "",
+      "path": "media/music/Alireza-Talischi-Bi-Panahi-320.mp3"
+    },
+    {
+      "title": "Amir Azimi Khodamo Khodet",
+      "artist": "",
+      "path": "media/music/Amir-Azimi-Khodamo-Khodet-320.mp3"
+    },
+    {
+      "title": "Amirabbas Golab Che Shavad",
+      "artist": "",
+      "path": "media/music/Amirabbas-Golab-Che-Shavad-320.mp3"
+    },
+    {
+      "title": "Amirabbas Golab Paeeze Delam",
+      "artist": "",
+      "path": "media/music/Amirabbas-Golab-Paeeze-Delam-320.mp3"
+    },
+    {
+      "title": "Amirabbas Golab To Az Koja Peydat Shod",
+      "artist": "",
+      "path": "media/music/Amirabbas-Golab-To-Az-Koja-Peydat-Shod-320.mp3"
+    },
+    {
+      "title": "Araei Hayedeh(2) (2)",
+      "artist": "",
+      "path": "media/music/Araei-Hayedeh(2) (2).mp3"
+    },
+    {
+      "title": "Ariana Grande Hate That I Made You Iove Me",
+      "artist": "",
+      "path": "media/music/Ariana-Grande-Hate-That-I-Made-You-Iove-Me-128.mp3"
+    },
+    {
+      "title": "Aron Afshar Shabe Royaei",
+      "artist": "",
+      "path": "media/music/Aron-Afshar-Shabe-Royaei-128.mp3"
+    },
+    {
+      "title": "Arshiyas Be Ki Begam",
+      "artist": "",
+      "path": "media/music/Arshiyas-Be-Ki-Begam-320.mp3"
+    },
+    {
+      "title": "Arshiyas On Hame Chizam Bood",
+      "artist": "",
+      "path": "media/music/Arshiyas-On-Hame-Chizam-Bood-320.mp3"
+    },
+    {
+      "title": "Arshiyas Sare To Yeki",
+      "artist": "",
+      "path": "media/music/Arshiyas-Sare-To-Yeki-320.mp3"
+    },
+    {
+      "title": "Arshiyas Yadet Oftadam",
+      "artist": "",
+      "path": "media/music/Arshiyas-Yadet-Oftadam-320.mp3"
+    },
+    {
+      "title": "Be Ma Mirese",
+      "artist": "Asef Aria",
+      "path": "media/music/Asef Aria - Be Ma Mirese.mp3"
+    },
+    {
+      "title": "AUD 20201006 WA0045",
+      "artist": "",
+      "path": "media/music/AUD-20201006-WA0045.mp3"
+    },
+    {
+      "title": "Hale Khob Ba To [SevilMusic]",
+      "artist": "Babak Jahanbakhsh",
+      "path": "media/music/Babak Jahanbakhsh - Hale Khob Ba To [SevilMusic].mp3"
+    },
+    {
+      "title": "Babak Jahanbakhsh Dobare Bekhand",
+      "artist": "",
+      "path": "media/music/Babak-Jahanbakhsh-Dobare-Bekhand-320.mp3"
+    },
+    {
+      "title": "Babak Jahanbakhsh Hame Donyam",
+      "artist": "",
+      "path": "media/music/Babak-Jahanbakhsh-Hame-Donyam-256.mp3"
+    },
+    {
+      "title": "Bi Marefat",
+      "artist": "Behnam Bani",
+      "path": "media/music/Behnam Bani - Bi Marefat.mp3"
+    },
+    {
+      "title": "Benson Boone Beautiful Things",
+      "artist": "",
+      "path": "media/music/Benson-Boone-Beautiful-Things-128.mp3"
+    },
+    {
+      "title": "Boodanet Lazeme",
+      "artist": "",
+      "path": "media/music/Boodanet Lazeme.mp3"
+    },
+    {
+      "title": "Bruno Mars Talking To The Moon",
+      "artist": "",
+      "path": "media/music/Bruno-Mars-Talking-To-The-Moon-128.mp3"
+    },
+    {
+      "title": "Chaartaar Baaraan Toee",
+      "artist": "",
+      "path": "media/music/Chaartaar-Baaraan-Toee-128.mp3"
+    },
+    {
+      "title": "Chaartaar Hendeseh",
+      "artist": "",
+      "path": "media/music/Chaartaar-Hendeseh-192.mp3"
+    },
+    {
+      "title": "David Guetta Titanium (Ft Sia)",
+      "artist": "",
+      "path": "media/music/David-Guetta-Titanium-(Ft-Sia)-320.mp3"
+    },
+    {
+      "title": "Dayan Ta Abad To",
+      "artist": "",
+      "path": "media/music/Dayan-Ta-Abad-To-320.mp3"
+    },
+    {
+      "title": "Dua Lipa Don t Start Now",
+      "artist": "",
+      "path": "media/music/Dua-Lipa-Don t-Start-Now-320.mp3"
+    },
+    {
+      "title": "Dua Lipa Physical",
+      "artist": "",
+      "path": "media/music/Dua-Lipa-Physical-320.mp3"
+    },
+    {
+      "title": "Ebi Ki Ashkato Pak Mikoneh",
+      "artist": "",
+      "path": "media/music/Ebi-Ki-Ashkato-Pak-Mikoneh-320.mp3"
+    },
+    {
+      "title": "Ed Sheeran Perfect Official Music Video 1782839977026",
+      "artist": "",
+      "path": "media/music/Ed Sheeran   Perfect  Official Music Video 1782839977026.mp3"
+    },
+    {
+      "title": "Ed Sheeran Perfect",
+      "artist": "",
+      "path": "media/music/Ed-Sheeran-Perfect-128.mp3"
+    },
+    {
+      "title": "Ehsan Khajeamiri 30 Salegi",
+      "artist": "",
+      "path": "media/music/Ehsan-Khajeamiri-30-Salegi-320.mp3"
+    },
+    {
+      "title": "Ehsan Khajehamiri Bayad Bargasht",
+      "artist": "",
+      "path": "media/music/Ehsan-Khajehamiri-Bayad-Bargasht-320.mp3"
+    },
+    {
+      "title": "Ehsan Khajehamiri Nagoo Bargard",
+      "artist": "",
+      "path": "media/music/Ehsan-Khajehamiri-Nagoo-Bargard-320.mp3"
+    },
+    {
+      "title": "Eminem Legacy",
+      "artist": "",
+      "path": "media/music/Eminem-Legacy-320.mp3"
+    },
+    {
+      "title": "Erfan Abra Eteraf",
+      "artist": "",
+      "path": "media/music/Erfan-Abra-Eteraf-320.mp3"
+    },
+    {
+      "title": "Erfan Tahmasbi Rafti Nadidi",
+      "artist": "",
+      "path": "media/music/Erfan-Tahmasbi-Rafti-Nadidi-192.mp3"
+    },
+    {
+      "title": "Faramarz Assef Aroose Mahtab",
+      "artist": "",
+      "path": "media/music/Faramarz-Assef-Aroose-Mahtab-320.mp3"
+    },
+    {
+      "title": "Roozhaye Tarik",
+      "artist": "Farzad Farzin",
+      "path": "media/music/Farzad Farzin - Roozhaye Tarik.mp3"
+    },
+    {
+      "title": "Farzad Farzin Ey Kash",
+      "artist": "",
+      "path": "media/music/Farzad-Farzin-Ey-Kash-320.mp3"
+    },
+    {
+      "title": "Farzad Farzin Kharabesh Kardi",
+      "artist": "",
+      "path": "media/music/Farzad-Farzin-Kharabesh-Kardi-128.mp3"
+    },
+    {
+      "title": "Farzad Farzin Khoda Mano Bebin",
+      "artist": "",
+      "path": "media/music/Farzad-Farzin-Khoda-Mano-Bebin-320.mp3"
+    },
+    {
+      "title": "Farzad Farzin Mankan",
+      "artist": "",
+      "path": "media/music/Farzad-Farzin-Mankan-320.mp3"
+    },
+    {
+      "title": "Farzad Farzin Nagi Ke Nagoftam",
+      "artist": "",
+      "path": "media/music/Farzad-Farzin-Nagi-Ke-Nagoftam-320.mp3"
+    },
+    {
+      "title": "Guilan Diss All",
+      "artist": "",
+      "path": "media/music/Guilan-Diss All.mp3"
+    },
+    {
+      "title": "Moroor",
+      "artist": "Haamim",
+      "path": "media/music/Haamim - Moroor.mp3"
+    },
+    {
+      "title": "Haamim Podcast 1",
+      "artist": "",
+      "path": "media/music/Haamim Podcast 1.mp3"
+    },
+    {
+      "title": "Helen Marde Royaei",
+      "artist": "",
+      "path": "media/music/Helen-Marde-Royaei-256.mp3"
+    },
+    {
+      "title": "Hillsong UNITED Oceans (Where Feet May Fail)",
+      "artist": "",
+      "path": "media/music/Hillsong-UNITED-Oceans-(Where-Feet-May-Fail)-320.mp3"
+    },
+    {
+      "title": "Poobon, Arta",
+      "artist": "KI",
+      "path": "media/music/KI - Poobon, Arta.mp3"
+    },
+    {
+      "title": "Koorosh Ft Arta – Bia Pas Bemon Ba Man",
+      "artist": "",
+      "path": "media/music/Koorosh Ft Arta  – Bia Pas Bemon Ba Man.mp3"
+    },
+    {
+      "title": "koorosh kabir",
+      "artist": "",
+      "path": "media/music/koorosh kabir.mp3"
+    },
+    {
+      "title": "Leila Forouhar Yare Shirin",
+      "artist": "",
+      "path": "media/music/Leila-Forouhar-Yare-Shirin-320.mp3"
+    },
+    {
+      "title": "Lewis Capaldi Before You Go",
+      "artist": "",
+      "path": "media/music/Lewis-Capaldi-Before-You-Go-128.mp3"
+    },
+    {
+      "title": "Kenaretam",
+      "artist": "Mahyar",
+      "path": "media/music/Mahyar - Kenaretam.mp3"
+    },
+    {
+      "title": "Ghab ()",
+      "artist": "Mahyar And Deon",
+      "path": "media/music/Mahyar And Deon - Ghab (320).mp3"
+    },
+    {
+      "title": "Mahyar Har Ki Mikhad Bere",
+      "artist": "",
+      "path": "media/music/Mahyar-Har-Ki-Mikhad-Bere-128.mp3"
+    },
+    {
+      "title": "Majid Razavi Fereshteh",
+      "artist": "",
+      "path": "media/music/Majid-Razavi-Fereshteh-320.mp3"
+    },
+    {
+      "title": "Majid Razavi Taghiram Bede",
+      "artist": "",
+      "path": "media/music/Majid-Razavi-Taghiram-Bede-128.mp3"
+    },
+    {
+      "title": "man vase babm benz",
+      "artist": "",
+      "path": "media/music/man vase babm benz.mp3"
+    },
+    {
+      "title": "Masih Arash Range Khoda",
+      "artist": "",
+      "path": "media/music/Masih-Arash-Range-Khoda-320.mp3"
+    },
+    {
+      "title": "Masin Abado yek rooz",
+      "artist": "",
+      "path": "media/music/Masin Abado yek rooz .mp3"
+    },
+    {
+      "title": "Mehdi Yarrahi Vedae Baed Az Raftan",
+      "artist": "",
+      "path": "media/music/Mehdi-Yarrahi-Vedae-Baed-Az-Raftan-320.mp3"
+    },
+    {
+      "title": "Mehrtaash Az Sare Shab",
+      "artist": "",
+      "path": "media/music/Mehrtaash-Az-Sare-Shab-320.mp3"
+    },
+    {
+      "title": "Mehrtaash Mesle Hame",
+      "artist": "",
+      "path": "media/music/Mehrtaash-Mesle-Hame-320.mp3"
+    },
+    {
+      "title": "Meysam Ebrahimi Jono Delam",
+      "artist": "",
+      "path": "media/music/Meysam-Ebrahimi-Jono-Delam-128.mp3"
+    },
+    {
+      "title": "Milad Babaei Gole Sorkh",
+      "artist": "",
+      "path": "media/music/Milad-Babaei-Gole-Sorkh-320.mp3"
+    },
+    {
+      "title": "Milad Babaei Sefid",
+      "artist": "",
+      "path": "media/music/Milad-Babaei-Sefid-320.mp3"
+    },
+    {
+      "title": "MiniSet Aroosi",
+      "artist": "",
+      "path": "media/music/MiniSet Aroosi.mp3"
+    },
+    {
+      "title": "Miras In Male Kiye",
+      "artist": "",
+      "path": "media/music/Miras-In-Male-Kiye-320.mp3"
+    },
+    {
+      "title": "Miras Mehmooni",
+      "artist": "",
+      "path": "media/music/Miras-Mehmooni-320.mp3"
+    },
+    {
+      "title": "Miras Model",
+      "artist": "",
+      "path": "media/music/Miras-Model-320.mp3"
+    },
+    {
+      "title": "Moein Z Sare Sobh",
+      "artist": "",
+      "path": "media/music/Moein-Z-Sare-Sobh-320.mp3"
+    },
+    {
+      "title": "Moein Z Male Mani معین زندی مال منی 1780223673459",
+      "artist": "",
+      "path": "media/music/Moein_Z_Male_Mani_معین_زندی_مال_منی_1780223673459.mp3"
+    },
+    {
+      "title": "Pesare Khoob",
+      "artist": "Mohsen Ebrahimzadeh",
+      "path": "media/music/Mohsen Ebrahimzadeh - Pesare Khoob.mp3"
+    },
+    {
+      "title": "Mohsen Chavoshi Mah Pishooni (Shahrzad)",
+      "artist": "",
+      "path": "media/music/Mohsen-Chavoshi-Mah-Pishooni-(Shahrzad)-128.mp3"
+    },
+    {
+      "title": "Mohsen Yeganeh Hobab",
+      "artist": "",
+      "path": "media/music/Mohsen-Yeganeh-Hobab-128.mp3"
+    },
+    {
+      "title": "Mohsen Yeganeh Moohat",
+      "artist": "",
+      "path": "media/music/Mohsen-Yeganeh-Moohat-128.mp3"
+    },
+    {
+      "title": "Mohsen Yeganeh Nabashi",
+      "artist": "",
+      "path": "media/music/Mohsen-Yeganeh-Nabashi-128.mp3"
+    },
+    {
+      "title": "Morteza Pashaei Rooze Barfi",
+      "artist": "",
+      "path": "media/music/Morteza-Pashaei-Rooze-Barfi-320.mp3"
+    },
+    {
+      "title": "Morteza Pashaei Sina Sarlak Hasrat",
+      "artist": "",
+      "path": "media/music/Morteza-Pashaei-Sina-Sarlak-Hasrat-128.mp3"
+    },
+    {
+      "title": "Naser Zeynali Delbare Nab (Slow Version)",
+      "artist": "",
+      "path": "media/music/Naser-Zeynali-Delbare-Nab-(Slow-Version)-320.mp3"
+    },
+    {
+      "title": "Naser Zeynali Delbare Nab",
+      "artist": "",
+      "path": "media/music/Naser-Zeynali-Delbare-Nab-320.mp3"
+    },
+    {
+      "title": "Naser Zeynali Eshgham",
+      "artist": "",
+      "path": "media/music/Naser-Zeynali-Eshgham-320.mp3"
+    },
+    {
+      "title": "Naser Zeynali Nafas",
+      "artist": "",
+      "path": "media/music/Naser-Zeynali-Nafas-320.mp3"
+    },
+    {
+      "title": "To Ke Midooni (Guitar Version)",
+      "artist": "Nivad",
+      "path": "media/music/Nivad - To Ke Midooni (Guitar Version).mp3"
+    },
+    {
+      "title": "Noor Sina Sae",
+      "artist": "",
+      "path": "media/music/Noor-Sina-Sae.mp3"
+    },
+    {
+      "title": "Lazemami",
+      "artist": "Novan",
+      "path": "media/music/Novan - Lazemami.mp3"
+    },
+    {
+      "title": "Goosh Bede",
+      "artist": "Omid Ghane",
+      "path": "media/music/Omid Ghane - Goosh Bede.mp3"
+    },
+    {
+      "title": "Omid Ghane ft Amir Tataloo Omidvar Bash",
+      "artist": "",
+      "path": "media/music/Omid Ghane ft Amir Tataloo _ Omidvar Bash.mp3"
+    },
+    {
+      "title": "Omid Ghane Sar Gardoon",
+      "artist": "",
+      "path": "media/music/Omid Ghane-Sar Gardoon.mp3"
+    },
+    {
+      "title": "Omid Ghane Tange Delam",
+      "artist": "",
+      "path": "media/music/Omid Ghane_Tange Delam.mp3"
+    },
+    {
+      "title": "Omid Ghanea P1 1405 Final",
+      "artist": "",
+      "path": "media/music/Omid Ghanea-P1-1405-Final.mp3"
+    },
+    {
+      "title": "Pedram Paliz Baran",
+      "artist": "",
+      "path": "media/music/Pedram-Paliz-Baran-128.mp3"
+    },
+    {
+      "title": "Pesaram Daniyal",
+      "artist": "",
+      "path": "media/music/Pesaram-Daniyal.mp3"
+    },
+    {
+      "title": "Dige Chi Kame Amir Khalvat, Darab",
+      "artist": "RapiWar",
+      "path": "media/music/RapiWar - Dige Chi Kame - Amir Khalvat, Darab.mp3"
+    },
+    {
+      "title": "Man Tanham The Don",
+      "artist": "RapRelease",
+      "path": "media/music/RapRelease - Man Tanham - The Don.m4a"
+    },
+    {
+      "title": "Araz Ft Shayea Ft Tatalo",
+      "artist": "Remix Kado",
+      "path": "media/music/Remix Kado - Araz Ft Shayea Ft Tatalo.mp3"
+    },
+    {
+      "title": "Reza Sadeghi Shabe Barooni",
+      "artist": "",
+      "path": "media/music/Reza-Sadeghi-Shabe-Barooni-320.mp3"
+    },
+    {
+      "title": "Eshgham Naz Dare ()",
+      "artist": "Rivan",
+      "path": "media/music/Rivan - Eshgham Naz Dare (320).mp3"
+    },
+    {
+      "title": "Saman Jalili Tanhaei",
+      "artist": "",
+      "path": "media/music/Saman-Jalili-Tanhaei-320.mp3"
+    },
+    {
+      "title": "Bemoonam",
+      "artist": "Sami Beigi",
+      "path": "media/music/Sami Beigi - Bemoonam.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Daste Man Nist",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Daste-Man-Nist-128.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Faghat Ba To Eshgham",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Faghat-Ba-To-Eshgham-128.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Ghazi",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Ghazi-128.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Halam Avaz Mishe",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Halam-Avaz-Mishe-128.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Rooze Sard",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Rooze-Sard-128.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Sarnevesht",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Sarnevesht-128.mp3"
+    },
+    {
+      "title": "Shadmehr Aghili Tajrobeh Kon",
+      "artist": "",
+      "path": "media/music/Shadmehr-Aghili-Tajrobeh-Kon-320.mp3"
+    },
+    {
+      "title": "Shahrokh Haz Kardam",
+      "artist": "",
+      "path": "media/music/Shahrokh-Haz-Kardam-256.mp3"
+    },
+    {
+      "title": "Cheshmami",
+      "artist": "Shayea",
+      "path": "media/music/Shayea - Cheshmami.mp3"
+    },
+    {
+      "title": "Lenna Man Delam Nemikhast @RapPlusNews",
+      "artist": "Shayea",
+      "path": "media/music/Shayea - Lenna   Man Delam Nemikhast-@RapPlusNews.mp3"
+    },
+    {
+      "title": "Moondam",
+      "artist": "Shayea",
+      "path": "media/music/Shayea - Moondam.mp3"
+    },
+    {
+      "title": "Navazandeh",
+      "artist": "Siamak Abbasi",
+      "path": "media/music/Siamak Abbasi - Navazandeh.mp3"
+    },
+    {
+      "title": "Siamak Abbasi Man Divane Nistam",
+      "artist": "",
+      "path": "media/music/Siamak-Abbasi-Man-Divane-Nistam-320.mp3"
+    },
+    {
+      "title": "Sigrid Strangers",
+      "artist": "",
+      "path": "media/music/Sigrid-Strangers-320.mp3"
+    },
+    {
+      "title": "Ye Tane",
+      "artist": "Sina Derakhshande",
+      "path": "media/music/Sina Derakhshande - Ye Tane.mp3"
+    },
+    {
+      "title": "Man Tare Darya ()",
+      "artist": "Sina Sedaghat",
+      "path": "media/music/Sina Sedaghat - Man Tare Darya (320).mp3"
+    },
+    {
+      "title": "Sina Parsian Adaa",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Adaa-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Asbe Siah",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Asbe-Siah-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Hamsayeh",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Hamsayeh-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Kashti 2",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Kashti-2-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Kashti 3",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Kashti-3-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Kee",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Kee-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Manfie 5",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Manfie-5-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Masti",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Masti-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Raahzan",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Raahzan-320.mp3"
+    },
+    {
+      "title": "Sina Parsian Rag Ft Parastoo",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-Rag-Ft-Parastoo-320.mp3"
+    },
+    {
+      "title": "Sina Parsian The Moon",
+      "artist": "",
+      "path": "media/music/Sina-Parsian-The-Moon-320.mp3"
+    },
+    {
+      "title": "Sina SaE Carnival Statement",
+      "artist": "",
+      "path": "media/music/Sina-SaE-Carnival-Statement-320.mp3"
+    },
+    {
+      "title": "Sina SaE Deja Vu",
+      "artist": "",
+      "path": "media/music/Sina-SaE-Deja-Vu-320.mp3"
+    },
+    {
+      "title": "Sina Sarlak Eshgh",
+      "artist": "",
+      "path": "media/music/Sina-Sarlak-Eshgh-320.mp3"
+    },
+    {
+      "title": "Sina Sarlak Zire Saghfe Doodi",
+      "artist": "",
+      "path": "media/music/Sina-Sarlak-Zire-Saghfe-Doodi-128.mp3"
+    },
+    {
+      "title": "Sirvan Khosravi Tajob Nakon",
+      "artist": "",
+      "path": "media/music/Sirvan-Khosravi-Tajob-Nakon-320.mp3"
+    },
+    {
+      "title": "Sogand Hamgonah OFFICIAL AUDIO سوگند همگناه1782927713307",
+      "artist": "",
+      "path": "media/music/Sogand_Hamgonah_OFFICIAL_AUDIO_سوگند_همگناه1782927713307.mp3"
+    },
+    {
+      "title": "Soheil Mehrzadegan 1001 Gol",
+      "artist": "",
+      "path": "media/music/Soheil-Mehrzadegan-1001-Gol-320.mp3"
+    },
+    {
+      "title": "T.me LovMusicam Novan Azizam",
+      "artist": "",
+      "path": "media/music/T.me-LovMusicam-Novan-Azizam.mp3"
+    },
+    {
+      "title": "Arvin Samimi Erade Kon (Guitar Version)",
+      "artist": "T.me X HiTMusice",
+      "path": "media/music/T.me-X-HiTMusice - Arvin Samimi - Erade Kon (Guitar Version).mp3"
+    },
+    {
+      "title": "Ehsan Khaje Amiri To Ke Ghalbami",
+      "artist": "T.me X HiTMusice",
+      "path": "media/music/T.me-X-HiTMusice - Ehsan Khaje Amiri - To Ke Ghalbami.mp3"
+    },
+    {
+      "title": "Sina Derakhshande Kooleh (Deli)",
+      "artist": "T.me X HiTMusice",
+      "path": "media/music/T.me-X-HiTMusice - Sina Derakhshande - Kooleh (Deli).mp3"
+    },
+    {
+      "title": "Dele Man",
+      "artist": "T.me X LovMusicam",
+      "path": "media/music/T.me-X-LovMusicam - Dele Man.mp3"
+    },
+    {
+      "title": "Mahyar Bato",
+      "artist": "T.me X LovMusicam",
+      "path": "media/music/T.me-X-LovMusicam - Mahyar - Bato.mp3"
+    },
+    {
+      "title": "Majid Razavi Ki Midoone",
+      "artist": "T.me X LovMusicam",
+      "path": "media/music/T.me-X-LovMusicam - Majid Razavi - Ki Midoone.mp3"
+    },
+    {
+      "title": "The Weeknd Save Your Tears",
+      "artist": "",
+      "path": "media/music/The-Weeknd-Save-Your-Tears-320.mp3"
+    },
+    {
+      "title": "To Jone Mano To Eshghi shdmr",
+      "artist": "",
+      "path": "media/music/To Jone Mano To Eshghi shdmr.mp3"
+    },
+    {
+      "title": "Arianfar",
+      "artist": "To Vase Man",
+      "path": "media/music/To Vase Man - Arianfar.mp3"
+    },
+    {
+      "title": "Akharesh Hamoon Shod",
+      "artist": "Yousef Zamani",
+      "path": "media/music/Yousef Zamani - Akharesh Hamoon Shod.mp3"
+    },
+    {
+      "title": "Cafe []",
+      "artist": "Yousef Zamani",
+      "path": "media/music/Yousef Zamani - Cafe [320].mp3"
+    },
+    {
+      "title": "Too In Hava",
+      "artist": "Yousef Zamani",
+      "path": "media/music/Yousef Zamani - Too In Hava.mp3"
+    }
+  ],
+  "photos": [
+    {
+      "title": "آغوش تو",
+      "path": "media/photos/آغوش تو.jpg"
+    },
+    {
+      "title": "آینده‌ی ما",
+      "path": "media/photos/آینده‌ی ما.jpg"
+    },
+    {
+      "title": "با تو، هرجا",
+      "path": "media/photos/با تو، هرجا.jpg"
+    },
+    {
+      "title": "با من برقص",
+      "path": "media/photos/با من برقص.jpg"
+    },
+    {
+      "title": "تا خود ستاره‌ها",
+      "path": "media/photos/تا خود ستاره‌ها.jpg"
+    },
+    {
+      "title": "تکیه‌گاه من",
+      "path": "media/photos/تکیه‌گاه من.jpg"
+    },
+    {
+      "title": "خانواده‌ی کوچک ما",
+      "path": "media/photos/خانواده‌ی کوچک ما.jpg"
+    },
+    {
+      "title": "خونه یعنی شما",
+      "path": "media/photos/خونه یعنی شما.jpg"
+    },
+    {
+      "title": "دوتایی",
+      "path": "media/photos/دوتایی.jpg"
+    },
+    {
+      "title": "رویای ما",
+      "path": "media/photos/رویای ما.jpg"
+    },
+    {
+      "title": "شب ما",
+      "path": "media/photos/شب ما.jpg"
+    },
+    {
+      "title": "شب‌های تهران",
+      "path": "media/photos/شب‌های تهران.jpg"
+    },
+    {
+      "title": "غروب دونفره",
+      "path": "media/photos/غروب دونفره.jpg"
+    },
+    {
+      "title": "قدم‌به‌قدم",
+      "path": "media/photos/قدم‌به‌قدم.jpg"
+    },
+    {
+      "title": "قرار ساده",
+      "path": "media/photos/قرار ساده.jpg"
+    },
+    {
+      "title": "قصه‌ی ما",
+      "path": "media/photos/قصه‌ی ما.jpg"
+    },
+    {
+      "title": "ماجراجویی ما",
+      "path": "media/photos/ماجراجویی ما.jpg"
+    },
+    {
+      "title": "من و تو",
+      "path": "media/photos/من و تو.jpg"
+    },
+    {
+      "title": "همین نزدیکی",
+      "path": "media/photos/همین نزدیکی.jpg"
+    },
+    {
+      "title": "کنار تو",
+      "path": "media/photos/کنار تو.jpg"
+    },
+    {
+      "title": "یه بوس برای تو",
+      "path": "media/photos/یه بوس برای تو.jpg"
+    },
+    {
+      "title": "یه زندگی ساده",
+      "path": "media/photos/یه زندگی ساده.jpg"
+    },
+    {
+      "title": "یک قاب از ما",
+      "path": "media/photos/یک قاب از ما.jpg"
+    }
+  ],
+  "voices": [
+    {
+      "title": "Just You",
+      "path": "media/voices/Just_You.ogg"
+    },
+    {
+      "title": "Morghe Amin",
+      "path": "media/voices/Morghe_Amin.ogg"
+    },
+    {
+      "title": "Poem 1",
+      "path": "media/voices/Poem_1.ogg"
+    },
+    {
+      "title": "Poem 2",
+      "path": "media/voices/Poem_2.ogg"
+    },
+    {
+      "title": "Words are not enough",
+      "path": "media/voices/Words_are_not_enough.ogg"
+    }
+  ]
+}
