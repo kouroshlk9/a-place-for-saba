@@ -208,6 +208,20 @@ main{max-width:1180px;margin:auto;padding:0 20px 120px}
 .legal-note{text-align:center;color:#9f8a93;font-size:10px;margin-top:13px;line-height:1.7}
 @media(max-width:800px){.music-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.music-grid{grid-template-columns:1fr}.soundtrack-intro{grid-template-columns:1fr}}
 
+
+/* v6.1 reliability fixes */
+.voice audio{
+  display:block;
+  min-height:40px;
+}
+.voice{
+  cursor:default;
+}
+#voiceGrid:empty::after{
+  content:"Loading voice notes…";
+  color:#cab7bf;
+}
+
 </style>
 </head>
 <body>
@@ -372,42 +386,134 @@ function renderMusic(q=""){
   document.querySelectorAll(".play").forEach(b=>b.onclick=()=>playTrack(b.dataset.path,b.dataset.title));
 }
 function renderVoices(){
-  $("#voiceCount").textContent=DATA.voices.length+" وویس";
-  $("#voiceGrid").innerHTML=DATA.voices.length
-    ? DATA.voices.map(x=>`<div class="voice"><div class="voice-head"><div class="vicon">🎙</div><div><b>${esc(x.title)}</b><small>برای صبا</small></div></div><audio controls preload="none" src="${encodeURI(x.path)}"></audio></div>`).join("")
-    : `<div class="empty">هنوز وویسی اضافه نشده.</div>`;
+  const countEl=$("#voiceCount");
+  const grid=$("#voiceGrid");
+  if(!grid) return;
+
+  const voices=Array.isArray(DATA.voices)?DATA.voices:[];
+  if(countEl) countEl.textContent=voices.length+" وویس";
+
+  grid.innerHTML=voices.length
+    ? voices.map((x,i)=>`<div class="voice">
+        <div class="voice-head">
+          <div class="vicon">🎙</div>
+          <div>
+            <b>${esc(x.title)}</b>
+            <small>برای صبا · Voice ${String(i+1).padStart(2,"0")}</small>
+          </div>
+        </div>
+        <audio controls preload="metadata" src="${encodeURI(x.path)}"></audio>
+      </div>`).join("")
+    : `<div class="empty">وویس‌ها پیدا نشدن. مطمئن شو فایل‌های media/voices و media-manifest.json روی GitHub هستند.</div>`;
 }
 function playTrack(path,title){let p=$("#player");p.src=path;$("#nowTitle").textContent=title;$("#now").style.display="grid";p.play()}
 
 fetch("media-manifest.json?"+Date.now())
-  .then(r=>{if(!r.ok)throw new Error();return r.json()})
-  .then(d=>{DATA=d;renderPhotos();renderMusic();renderVoices()})
-  .catch(()=>{renderPhotos();renderMusic();renderVoices()});
+  .then(r=>{if(!r.ok)throw new Error("media-manifest.json not found");return r.json()})
+  .then(d=>{
+    DATA=d;
+    renderPhotos();
+    renderVoices();
+  })
+  .catch(err=>{
+    console.error("Media manifest error:", err);
+    renderPhotos();
+    renderVoices();
+  });
 
-$("#search").oninput=e=>renderMusic(e.target.value);
-$("#shuffle").onclick=()=>{if(!DATA.music.length)return;let x=DATA.music[Math.floor(Math.random()*DATA.music.length)];playTrack(encodeURI(x.path),x.title)};
 $("#heart").onclick=()=>$("#secretText").style.display="block";
 
-const START=new Date(2026,6,3,0,0,0);
-function addMonthsClamped(d,n){let x=new Date(d);let day=x.getDate();x.setDate(1);x.setMonth(x.getMonth()+n);let last=new Date(x.getFullYear(),x.getMonth()+1,0).getDate();x.setDate(Math.min(day,last));return x}
-function loveCounter(){
+const START = new Date(2026, 6, 3, 0, 0, 0); // 3 July 2026
+
+function daysInMonth(year, month){
+  return new Date(year, month + 1, 0).getDate();
+}
+
+function addCalendarMonths(date, months){
+  const d = new Date(date);
+  const originalDay = d.getDate();
+  d.setDate(1);
+  d.setMonth(d.getMonth() + months);
+  d.setDate(Math.min(originalDay, daysInMonth(d.getFullYear(), d.getMonth())));
+  return d;
+}
+
+function updateLoveCounter(){
+  const now = new Date();
+
+  // If page is viewed before the relationship start date.
+  if(now < START){
+    ["years","months","days","hours","minutes","seconds"].forEach(id=>{
+      const el=$("#"+id); if(el) el.textContent="0";
+    });
+    return;
+  }
+
+  let years = now.getFullYear() - START.getFullYear();
+  let cursor = new Date(
+    START.getFullYear() + years,
+    START.getMonth(),
+    START.getDate(),
+    START.getHours(),
+    START.getMinutes(),
+    START.getSeconds()
+  );
+
+  if(cursor > now){
+    years--;
+    cursor = new Date(
+      START.getFullYear() + years,
+      START.getMonth(),
+      START.getDate(),
+      START.getHours(),
+      START.getMinutes(),
+      START.getSeconds()
+    );
+  }
+
+  let months = 0;
+  while(months < 11){
+    const next = addCalendarMonths(cursor, 1);
+    if(next > now) break;
+    cursor = next;
+    months++;
+  }
+
+  let remaining = now - cursor;
+  const days = Math.floor(remaining / 86400000);
+  remaining -= days * 86400000;
+  const hours = Math.floor(remaining / 3600000);
+  remaining -= hours * 3600000;
+  const minutes = Math.floor(remaining / 60000);
+  remaining -= minutes * 60000;
+  const seconds = Math.floor(remaining / 1000);
+
+  const values={years,months,days,hours,minutes,seconds};
+  Object.entries(values).forEach(([id,value])=>{
+    const el=$("#"+id);
+    if(el) el.textContent=String(value).padStart(2,"0");
+  });
+}
+
+function updateAnniversary(){
   const now=new Date();
-  let years=now.getFullYear()-START.getFullYear();
-  let anchor=new Date(START);anchor.setFullYear(START.getFullYear()+years);
-  if(anchor>now){years--;anchor=new Date(START);anchor.setFullYear(START.getFullYear()+years)}
-  let months=0,next=addMonthsClamped(anchor,1);
-  while(next<=now && months<12){anchor=next;months++;next=addMonthsClamped(anchor,1)}
-  let ms=now-anchor,days=Math.floor(ms/86400000);ms-=days*86400000;
-  let hours=Math.floor(ms/3600000);ms-=hours*3600000;
-  let minutes=Math.floor(ms/60000);let seconds=Math.floor((ms-minutes*60000)/1000);
-  ["years","months","days","hours","minutes","seconds"].forEach((id,i)=>$("#"+id).textContent=[years,months,days,hours,minutes,seconds][i]);
+  let year=now.getFullYear();
+  let target=new Date(year, 6, 3, 0, 0, 0);
+
+  if(target <= now){
+    target=new Date(year + 1, 6, 3, 0, 0, 0);
+  }
+
+  const diff=target-now;
+  const totalDays=Math.ceil(diff/86400000);
+  const el=$("#annivDays");
+  if(el) el.textContent=totalDays;
 }
-function anniversary(){
-  const now=new Date();let y=now.getFullYear();let target=new Date(y,6,3,0,0,0);
-  if(target<=now)target=new Date(y+1,6,3,0,0,0);
-  $("#annivDays").textContent=Math.ceil((target-now)/86400000);
-}
-loveCounter();anniversary();setInterval(loveCounter,1000);setInterval(anniversary,60000);
+
+updateLoveCounter();
+updateAnniversary();
+setInterval(updateLoveCounter,1000);
+setInterval(updateAnniversary,60000);
 
 let OFFICIAL_SONGS=[];
 function renderOfficialSongs(){
@@ -422,7 +528,14 @@ function openMusicRoom(s){
  document.querySelector("#musicModal").classList.add("open");document.body.style.overflow="hidden";
 }
 function closeMusicRoom(){document.querySelector("#musicModal").classList.remove("open");document.querySelector("#roomPlayer").innerHTML="";document.body.style.overflow=""}
-fetch("songs.json?"+Date.now()).then(r=>r.json()).then(d=>{OFFICIAL_SONGS=d;renderOfficialSongs()});
+fetch("songs.json?"+Date.now())
+  .then(r=>{if(!r.ok) throw new Error("songs.json not found"); return r.json();})
+  .then(d=>{OFFICIAL_SONGS=Array.isArray(d)?d:[];renderOfficialSongs();})
+  .catch(err=>{
+    console.error("Songs error:",err);
+    const g=document.querySelector("#officialMusicGrid");
+    if(g) g.innerHTML='<div class="empty">لیست آهنگ‌ها بارگذاری نشد. فایل songs.json را در کنار index.html قرار بده.</div>';
+  });
 document.querySelector("#closeMusicRoom").onclick=closeMusicRoom;
 document.querySelector("#musicModal").onclick=e=>{if(e.target.id==="musicModal")closeMusicRoom()};
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMusicRoom()});
