@@ -188,6 +188,26 @@ main{max-width:1180px;margin:auto;padding:0 20px 120px}
   .section-head{display:block}.count{display:block;margin-top:10px}
   .now{grid-template-columns:1fr}.now audio{width:100%}
 }
+
+.soundtrack-intro{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:18px 20px;margin-bottom:16px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,rgba(240,181,199,.08),rgba(255,255,255,.025))}
+.soundtrack-intro p{margin:0;color:#d9c6cd;line-height:1.9;font-size:13px}
+.music-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.song-card{position:relative;min-height:190px;padding:20px;border:1px solid var(--line);border-radius:20px;background:radial-gradient(circle at 80% 10%,rgba(240,181,199,.13),transparent 32%),linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));overflow:hidden;cursor:pointer;transition:.28s ease}
+.song-card:hover{transform:translateY(-4px);border-color:rgba(240,181,199,.28);box-shadow:0 20px 55px rgba(0,0,0,.20)}
+.song-no{font:500 42px/1 "Cormorant Garamond",serif;color:rgba(255,255,255,.09);position:absolute;left:15px;top:12px}
+.song-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#efb5c6;color:#42182d;margin-bottom:24px}
+.song-card h3{margin:0 0 5px;font:500 25px/1.05 "Cormorant Garamond",serif}
+.song-card .artist{font-size:11px;color:#d1bbc3}.song-card .mini-note{margin-top:15px;font-size:12px;color:#cdb9c1;line-height:1.7}
+.source-pill{display:inline-block;margin-top:14px;padding:6px 9px;border-radius:999px;border:1px solid var(--line);font-size:9px;letter-spacing:.08em;color:#dbc6ce}
+.music-modal{position:fixed;inset:0;z-index:300;display:none;place-items:center;padding:20px;background:rgba(7,3,7,.78);backdrop-filter:blur(14px)}
+.music-modal.open{display:grid}.music-room{width:min(94vw,760px);max-height:90vh;overflow:auto;padding:26px;border:1px solid rgba(255,255,255,.16);border-radius:28px;background:radial-gradient(circle at 85% 0%,rgba(240,181,199,.13),transparent 30%),linear-gradient(155deg,#28151f,#160d13);box-shadow:0 35px 120px rgba(0,0,0,.55)}
+.music-room-top{display:flex;justify-content:space-between;align-items:start;gap:20px}.music-room small{color:#d5bdc6;letter-spacing:.12em}.music-room h3{font:500 clamp(36px,7vw,58px)/1 "Cormorant Garamond",serif;margin:8px 0 4px}.music-room .room-artist{color:#e8c4cf}
+.close-room{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.05);color:white;cursor:pointer;font-size:19px}
+.love-note{margin:24px 0;padding:18px;border-right:2px solid #efb5c6;background:rgba(255,255,255,.035);color:#ead8df;line-height:2}
+.spotify-frame{width:100%;height:152px;border:0;border-radius:14px}.official-link{display:flex;align-items:center;justify-content:center;min-height:54px;border-radius:14px;background:#1ed760;color:#0b1d11;font-weight:700;margin-top:16px}
+.legal-note{text-align:center;color:#9f8a93;font-size:10px;margin-top:13px;line-height:1.7}
+@media(max-width:800px){.music-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.music-grid{grid-template-columns:1fr}.soundtrack-intro{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -285,14 +305,9 @@ main{max-width:1180px;margin:auto;padding:0 20px 120px}
 </section>
 
 <section class="section" id="music">
-  <div class="section-head">
-    <div><span class="eyebrow">OUR SOUNDTRACK</span><h2>آهنگ‌های ما</h2><p>آرشیوی که خودش با پوشه‌ی Music به‌روز می‌شه.</p></div>
-    <span id="musicCount" class="count"></span>
-  </div>
-  <div class="panel">
-    <div class="toolbar"><input id="search" placeholder="جستجوی آهنگ یا خواننده…"><button id="shuffle" class="icon-btn">Shuffle ✦</button></div>
-    <div id="musicList" class="track-list"></div>
-  </div>
+<div class="section-head"><div><span class="eyebrow">OUR SOUNDTRACK</span><h2>آهنگ‌های ما</h2><p>آهنگ‌هایی که هر کدوم یه گوشه از داستان ما رو نگه داشتن.</p></div><span id="officialMusicCount" class="count"></span></div>
+<div class="soundtrack-intro"><p>فایل‌های تجاری روی سایت ذخیره نمی‌شن؛ پخش از Player رسمی Spotify انجام می‌شه. روی هر آهنگ بزن تا Music Room خودش باز بشه.</p><button id="randomOfficialSong" class="icon-btn">یه آهنگ برای ما ✦</button></div>
+<div id="officialMusicGrid" class="music-grid"></div>
 </section>
 
 <section class="section" id="voices">
@@ -329,6 +344,7 @@ main{max-width:1180px;margin:auto;padding:0 20px 120px}
 </section>
 </main>
 
+<div id="musicModal" class="music-modal" aria-hidden="true"><div class="music-room"><div class="music-room-top"><div><small>OUR SOUNDTRACK ♡</small><h3 id="roomTitle"></h3><div id="roomArtist" class="room-artist"></div></div><button id="closeMusicRoom" class="close-room">×</button></div><div id="roomNote" class="love-note"></div><div id="roomPlayer"></div><div class="legal-note">Playback is provided by the official streaming source. No commercial audio file is hosted by this website.</div></div></div>
 <div class="now" id="now">
   <div><small>الان پخش می‌شود</small><div id="nowTitle"></div></div>
   <audio id="player" controls></audio>
@@ -392,6 +408,26 @@ function anniversary(){
   $("#annivDays").textContent=Math.ceil((target-now)/86400000);
 }
 loveCounter();anniversary();setInterval(loveCounter,1000);setInterval(anniversary,60000);
+
+let OFFICIAL_SONGS=[];
+function renderOfficialSongs(){
+ const g=document.querySelector("#officialMusicGrid");
+ document.querySelector("#officialMusicCount").textContent=OFFICIAL_SONGS.length+" آهنگ";
+ g.innerHTML=OFFICIAL_SONGS.map((s,i)=>`<article class="song-card" data-song="${i}"><span class="song-no">${String(i+1).padStart(2,"0")}</span><div class="song-icon">▶</div><h3>${esc(s.title)}</h3><div class="artist">${esc(s.artist)}</div><div class="mini-note">${esc(s.note)}</div><span class="source-pill">${s.spotify?"SPOTIFY":"OFFICIAL SEARCH"}</span></article>`).join("");
+ g.querySelectorAll(".song-card").forEach(c=>c.onclick=()=>openMusicRoom(OFFICIAL_SONGS[Number(c.dataset.song)]));
+}
+function openMusicRoom(s){
+ document.querySelector("#roomTitle").textContent=s.title;document.querySelector("#roomArtist").textContent=s.artist;document.querySelector("#roomNote").textContent=s.note;
+ document.querySelector("#roomPlayer").innerHTML=s.spotify?`<iframe class="spotify-frame" src="https://open.spotify.com/embed/track/${s.spotify}?utm_source=generator&theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`:`<a class="official-link" href="${s.search}" target="_blank" rel="noopener">باز کردن در Spotify ↗</a>`;
+ document.querySelector("#musicModal").classList.add("open");document.body.style.overflow="hidden";
+}
+function closeMusicRoom(){document.querySelector("#musicModal").classList.remove("open");document.querySelector("#roomPlayer").innerHTML="";document.body.style.overflow=""}
+fetch("songs.json?"+Date.now()).then(r=>r.json()).then(d=>{OFFICIAL_SONGS=d;renderOfficialSongs()});
+document.querySelector("#closeMusicRoom").onclick=closeMusicRoom;
+document.querySelector("#musicModal").onclick=e=>{if(e.target.id==="musicModal")closeMusicRoom()};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMusicRoom()});
+document.querySelector("#randomOfficialSong").onclick=()=>{if(OFFICIAL_SONGS.length)openMusicRoom(OFFICIAL_SONGS[Math.floor(Math.random()*OFFICIAL_SONGS.length)])};
+
 </script>
 </body>
 </html>
